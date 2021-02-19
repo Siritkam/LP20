@@ -13,5 +13,15 @@ classes = [
 print
 print('Средний бал в каждом классе: ')
 for score_cls in classes:
-    print((sum(score_cls["scores"])) / (len(score_cls["scores"])))
+    print(f'Средняя оценка в классе {score_cls["school_class"]}', 
+            (sum(score_cls["scores"])) / (len(score_cls["scores"])))
+
+print('---------')
+
+score_summ = 0
+score_len = 0
+for score_all in classes:
+    score_summ += sum(score_all["scores"])
+    score_len += len(score_all["scores"])
+print(f'Средняя оценка по все школе: ',  score_summ / score_len)
 
