@@ -10,5 +10,8 @@ classes = [
     {'school_class': '1d', 'scores': [5, 5, 3, 3, 3]},
     {'school_class': '1e', 'scores': [4, 4, 4, 5, 3]}
 ]
+print
+print('Средний бал в каждом классе: ')
+for score_cls in classes:
+    print((sum(score_cls["scores"])) / (len(score_cls["scores"])))
 
-    
